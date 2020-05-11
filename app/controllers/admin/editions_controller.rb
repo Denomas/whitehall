@@ -85,7 +85,9 @@ class Admin::EditionsController < Admin::BaseController
 
   def show_locked; end
 
-  def new; end
+  def new
+    raise Exception.new("Feck")
+  end
 
   def create
     if updater.can_perform? && @edition.save
