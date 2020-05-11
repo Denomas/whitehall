@@ -1,21 +1,21 @@
 When(/^I (?:also )?filter by (only )?a keyword$/) do |only|
-  fill_in_filter "Contains", "keyword", !!only
+  fill_in_filter "Contains", "keyword", only
 end
 
 When(/^I (?:also )?filter by (only )?a publication type$/) do |only|
-  select_filter "Publication type", "Guidance", !!only
+  select_filter "Publication type", "Guidance", only
 end
 
 When(/^I (?:also )?filter by (only )?a topic$/) do |only|
-  select_filter "Topic", "A Topic", !!only
+  select_filter "Topic", "A Topic", only
 end
 
 When(/^I (?:also )?filter by (only )?a department$/) do |only|
-  select_filter "Department", "A Department", !!only
+  select_filter "Department", "A Department", only
 end
 
 When(/^I (?:also )?filter by (only )?a world location$/) do |only|
-  select_filter "World locations", "A World Location", !!only
+  select_filter "World locations", "A World Location", only
 end
 
 When(/^I (?:also )?filter by (only )?published date$/) do |only|
